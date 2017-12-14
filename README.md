@@ -1,8 +1,13 @@
 # canvas-barrage
+
 弹幕插件，可配置多行
+
 在window上定义了canvasBarrage方法
+
 调用方法：
+
 canvasBarrage(oCanvas, aBarrage[,option]);
+
 /**
    * 
    * @param {object, string} oCanvas 
@@ -19,3 +24,14 @@ canvasBarrage(oCanvas, aBarrage[,option]);
    * 
    * } 
    */
+
+default-option: 
+
+{
+    multiLine: false,
+    diffSpeed: false,
+    speed: 1,
+    interval: fontSize *5,
+    colorArr:  ['red', 'skyblue', 'yellow', 'orange'] ,
+    fontSize: canvas.clientWidth / 30
+ }
