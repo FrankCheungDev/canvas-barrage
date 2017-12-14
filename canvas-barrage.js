@@ -6,8 +6,8 @@
    * @param {object, string} oCanvas 
    * @param {array} aBarrage 
    * @param {object} option
+   * 
    * option = {
-   * 字体、是否匀速（速度）、单行多行、 评论间隔、弹幕颜色
    * multiLine: boolean,
    * diffSpeed: boolean,
    * speed: number,
@@ -23,6 +23,15 @@
     if (!oCanvas || !aBarrage || !aBarrage.length) {
       return;
     }
+    // 对传入option处理
+    option = option ? option : {
+      multiLine: false,
+      diffSpeed: false,
+      speed: 1,
+      // interval: number,
+      // colorArr: array,
+      // fontSize: number
+    };
     
     // 对传入的canvas参数进行处理
     if (typeof oCanvas === 'string') {
