@@ -27,6 +27,7 @@ canvasBarrage(oCanvas, aBarrage[,option]);
 
 default-option: 
 
+```
 {
     multiLine: false,
     diffSpeed: false,
@@ -35,3 +36,4 @@ default-option:
     colorArr:  ['red', 'skyblue', 'yellow', 'orange'] ,
     fontSize: canvas.clientWidth / 30
  }
+```
